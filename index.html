@@ -4,21 +4,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>TomFoolery</title>
-    <script src="script.js"></script>
 </head>
 <body>
     <header class="navBar"> 
-        <ul class="navUl">
-            <div class="mainLogo"> TomFoolery </div>
-            <li><a href="default.asp">Random</a></li>
-            <li><a href="news.asp">Contact</a></li>
-            <li><a href="contact.asp">About</a></li>
-            <li><a href="about.asp">Home</a></li>
-            <div class="clear"></div> 
-        </ul>
+        <div class="mainLogo"> TomFoolery </div>
+        <div class="navUl">
+            <a class="navItem" href="default.asp">Random</a>
+            <a class="navItem" href="news.asp">Contact</a>
+            <a class="navItem" href="contact.asp">About</a>
+            <a class="navItem" href="about.asp">Home</a>
+            
+        </div>
     </header>
+    <div class="introContainer" id="intro"> 
+        <div class="introLeft">
+            <div class="greetTitle"> Greeting fellow <span style="color: #ffe893;">scholar</span></div>
+            <div class="introContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        </div>
+        <div class="introRight">
+            <img class="introPicture" src="pfp.jpg">
+            <div class="introPicText">what sup</div>
+        </div>
+    </div>
     <div class="fiTitle">This is not a title</div>
     <div class="secTitle"> and this is definitely not a website</div>
+    <script src="script.js"></script>
 </body>
 </html>
 
