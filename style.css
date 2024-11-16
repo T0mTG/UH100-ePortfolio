@@ -6,7 +6,7 @@
     font-style: normal;
 }
 body {
-    background: #0a0133;
+    background: #02012b;
     font-family: "Montserrat", sans-serif;
     height: 500%;
     width: 100%;
@@ -44,21 +44,8 @@ li{
     }
 }
 
-@keyframes nav-hover-out{
-    from {
-        margin: 14px 30px;
-        font-size: 25px;
-        font-weight: 600 ;
-    } 
-    to {
-        font-size: 20px;
-        font-weight: 300;
-        margin: 18px 30px;
-    }
-}
-
 .navItem{
-    animation: nav-hover-out ease-in 0.25s;
+    transition: 0.25s;
     float: right ;
     display: block;
     height: auto;
@@ -82,9 +69,10 @@ a:hover{
     height: auto;
     font-size: 25px;
     font-weight: 600;
-    padding: 14px 0px;
     color:aliceblue;
     margin-left: 30px;
+    margin-top: -5px;
+    font-family: fvf;
 }
 
 .clear
@@ -109,18 +97,9 @@ a:hover{
     }
 }
 
-@keyframes color-change-out {
-    from {
-        color:#ffea98;
-    } 
-    to {
-        color:#ffffff;
-    }
-}
-
 .secTitle{
     margin-top: 10px;
-    animation: color-change-out ease-in 0.15s;
+    transition: 0.15s;
     color: #ffffff;
     text-align: center;
     font-size: 40px;
@@ -134,22 +113,22 @@ a:hover{
 
 .introContainer{
     width: 90%;
-    height: 500px;
+    height: 470px;
     align-items: center;
     margin: auto;
     margin-top: 70px;
-    background-color:#0e0246;
+    background-color:#09003e;
 }
 .introLeft{
     float: left;
     margin: auto;
-    width: 70%;
+    width: 65%;
     height: auto;
 }
 
 .greetTitle{
     text-align: center;
-    margin-top: 35px;
+    margin-top: 40px;
     margin-right: 50px;
     font-family: fvf;
     letter-spacing: 2px;
@@ -159,33 +138,63 @@ a:hover{
 
 .introContent{
     color:white;
-    margin: 50px;
     margin-top: 30px;
+    margin: 20px;
     font-size: 20px;
     letter-spacing: 2px;
     line-height: 1.8;
+    text-align: right;
 }
 
 .introRight{
     float: right;
     margin: auto;
-    width: 30%;
-    height: auto;
+    width: 35%;
+    height: 100%;
 }
 
 .introPicture{
-    
+    margin: 35px;
     height: 400px;
     width: 400px;
     text-align: center;
-    background-color: #626ffb;
 }
 
 .introPicText{
-    margin-top: 20px;
+    margin-top: 35px;
     text-align:center;
     color: white;
 }
 
+.valueContainer{
+    width: 90%;
+    height: 480px;
+    align-items: center;
+    margin: auto;
+    margin-top: 70px;
+    background-color:#09003e;
+}
 
+.valueLeft{
+    float: left;
+    margin: auto;
+    width: 35%;
+    height: auto;
+}
+
+.valueRight{
+    float: right;
+    margin: auto;
+    width: 65%;
+    height: 100%;
+}
+
+.valueContent{
+    color:white;
+    margin-top: 30px;
+    margin-right: 35px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 1.8;
+}
 
