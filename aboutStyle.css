@@ -8,13 +8,13 @@
 body {
     background: #02012b;
     font-family: "Montserrat", sans-serif;
-    height: 00%;
+    height: 500%;
     width: 100%;
     margin: 0;
   }
 
 .background-img{
-    background-image: url(image/DSC_2060.JPG);
+    background-image: url(image/DSC_7043.JPG);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -31,7 +31,6 @@ body {
 .navUl{
     margin: auto;
     align-items: center;
-    
 }
 
 li{
@@ -117,6 +116,17 @@ a:hover{
 .secTitle:hover{
     animation: color-change-in ease-in 0.15s;
     color: #ffea98;
+}
+
+.imgTitle{
+    margin-top: 150px;
+    color: #ffffff;
+    text-align: center;
+    font-family: fvf;
+    font-size: 20px;
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: exit-crossing;
 }
 
 @keyframes appear {
@@ -274,4 +284,15 @@ a:hover{
     margin-top: 150px;
     background-color:#13094f;
     box-shadow: -20px 20px 20px 5px #030016;
+}
+
+.imgTitle{
+    margin-top: 150px;
+    color: #ffffff;
+    text-align: center;
+    font-family: fvf;
+    font-size: 20px;
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: exit-crossing;
 }
