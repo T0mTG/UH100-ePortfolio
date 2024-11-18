@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'fvf';
+    src: url('FVF Fernando 08.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background: #02012b;
+    font-family: "Montserrat", sans-serif;
+    height: 500%;
+    width: 100%;
+    margin: 0;
+  }
+
+.background-img{
+    background-image: url(image/DSC_4737.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.navBar{
+    background-color: black;
+    width: 100%;
+    height: 60px;
+}
+
+.navUl{
+    margin: auto;
+    align-items: center;
+    
+}
+
+li{
+    list-style: none;
+}
+
+@keyframes nav-hover-in{
+    from {
+        font-size: 20px;
+        font-weight: 300 ;
+        margin: 18px 30px;
+    } 
+    to {
+        font-size: 25px;
+        font-weight: 600 ;
+        margin: 14px 30px;
+    }
+}
+
+.navItem{
+    transition: 0.25s;
+    float: right ;
+    display: block;
+    height: auto;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 18px 30px; 
+    text-decoration: none;
+}
+
+.navItem:hover{
+    animation: nav-hover-in ease-in 0.2s;
+    font-weight: 600;
+    font-size: 25px;
+    margin: 14px 30px;
+}
+
+.mainLogo{
+    float: left;
+    height: auto;
+    font-size: 25px;
+    font-weight: 600;
+    color:aliceblue;
+    margin-left: 30px;
+    margin-top: -5px;
+    font-family: fvf;
+    letter-spacing: 2px;
+}
+
+.clear
+{
+  clear: both;
+}
+
+.fiTitle{
+    margin-top: 150px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700px;
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: exit-crossing;
+}
+
+
+@keyframes color-change-in {
+    from {
+        color:#ffffff;
+    } 
+    to {
+        color:#ffea98;
+    }
+}
+
+.secTitle{
+    margin-top: 10px;
+    transition: 0.15s;
+    color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: exit-crossing;
+}
+
+.triTitle{
+    animation-delay: 20s;
+    animation: appear 0.7s;
+    margin-top: 10px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.arrow{
+    animation-delay: 10s;
+    animation: appear ease-in 0.7s;
+    margin: auto;
+    width: 50px;
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+.secTitle:hover{
+    animation: color-change-in ease-in 0.15s;
+    color: #ffea98;
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes fade-out{
+    to{
+        opacity:0;
+        scale: 0.5;
+    }
+}
+
+.introContainer{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry;
+    width: 80%;
+    height: 470px;
+    align-items: center;
+    margin: auto;
+    margin-top: 300px;
+    /* background-color:#13094f; */
+    /* box-shadow: 20px 20px 20px 5px #030016; */
+}
+.introLeft{
+    float: left;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.greetTitle{
+    text-align: center;
+    margin-top: 40px;
+    font-family: fvf;
+    letter-spacing: 2px;
+    font-size: 40px;
+    color:white;
+}
+
+
+.introContent{
+    color:white;
+    margin: 20px;
+    margin-top: 40px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.introContent-2{
+    width: 100%;
+    color:white;
+    margin: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 1.8;
+    text-align: left;
+}
+
+
+
+.buttonContainer{
+    overflow: hidden;
+    text-align: center;
+    background-color: white;
+    margin: auto;
+    margin-top: 50px;
+    width: 200px;
+    height: 60px;
+    border-radius: 5px;
+    color:black;
+    
+}
+
+.buttonContainer:hover{
+    background-color: rgba(0, 0, 0, 0.445);
+    color:white;
+}
+
+.buttonText{
+    margin: auto;
+    text-align: center;
+    padding-top:15px;
+    font-size: 25px;
+    margin: 0 auto;
+}
