@@ -13,8 +13,12 @@ body {
     margin: 0;
   }
 
-.aboutPage{
-    height: 500%;
+.background-img{
+    background-image: url(image/DSC_2060.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 
