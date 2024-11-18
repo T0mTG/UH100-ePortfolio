@@ -175,9 +175,25 @@ li{
     /* background-color:#13094f; */
     /* box-shadow: 20px 20px 20px 5px #030016; */
 }
+
+.introContainer-2{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry;
+    width: 80%;
+    height: 470px;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    /* background-color:#13094f; */
+    /* box-shadow: 20px 20px 20px 5px #030016; */
+}
+
 .introLeft{
     float: left;
     margin: auto;
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.516);
     width: 100%;
     height: auto;
     margin-bottom: 30px;
@@ -223,6 +239,7 @@ li{
     background-color: white;
     margin: auto;
     margin-top: 50px;
+    margin-bottom: 30px;
     width: 200px;
     height: 60px;
     border-radius: 5px;
@@ -241,4 +258,15 @@ li{
     padding-top:15px;
     font-size: 25px;
     margin: 0 auto;
+}
+
+.imgTitle{
+    margin-top: 150px;
+    color: #ffffff;
+    text-align: center;
+    font-family: fvf;
+    font-size: 20px;
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: exit-crossing;
 }
