@@ -8,11 +8,14 @@
 body {
     background: #02012b;
     font-family: "Montserrat", sans-serif;
-    height: 500%;
+    height: 00%;
     width: 100%;
     margin: 0;
   }
 
+.aboutPage{
+    height: 500%;
+}
 
 
 .navBar{
@@ -73,6 +76,7 @@ a:hover{
     margin-left: 30px;
     margin-top: -5px;
     font-family: fvf;
+    letter-spacing: 2px;
 }
 
 .clear
@@ -81,12 +85,13 @@ a:hover{
 }
 
 .fiTitle{
-    margin-top: 200px;
+    margin-top: 180px;
     color: #ffffff;
     text-align: center;
     font-size: 35px;
     font-weight: 700px;
 }
+
 
 @keyframes color-change-in {
     from {
@@ -106,95 +111,33 @@ a:hover{
     font-style: italic;
 }
 
+.triTitle{
+    animation-delay: 20s;
+    animation: appear 3s;
+    margin-top: 10px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
+}
+
 .secTitle:hover{
     animation: color-change-in ease-in 0.15s;
     color: #ffea98;
 }
 
-.introContainer{
-    width: 90%;
-    height: 470px;
-    align-items: center;
-    margin: auto;
-    margin-top: 70px;
-    background-color:#09003e;
-}
-.introLeft{
-    float: left;
-    margin: auto;
-    width: 65%;
-    height: auto;
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
 }
 
-.greetTitle{
-    text-align: center;
-    margin-top: 40px;
-    margin-right: 50px;
-    font-family: fvf;
-    letter-spacing: 2px;
-    font-size: 25px;
-    color:white;
-}
-
-.introContent{
-    color:white;
-    margin-top: 30px;
-    margin: 20px;
-    font-size: 20px;
-    letter-spacing: 2px;
-    line-height: 1.8;
-    text-align: right;
-}
-
-.introRight{
-    float: right;
-    margin: auto;
-    width: 35%;
-    height: 100%;
-}
-
-.introPicture{
-    margin: 35px;
-    height: 400px;
-    width: 400px;
-    text-align: center;
-}
-
-.introPicText{
-    margin-top: 35px;
-    text-align:center;
-    color: white;
-}
-
-.valueContainer{
-    width: 90%;
-    height: 480px;
-    align-items: center;
-    margin: auto;
-    margin-top: 70px;
-    background-color:#09003e;
-}
-
-.valueLeft{
-    float: left;
-    margin: auto;
-    width: 35%;
-    height: auto;
-}
-
-.valueRight{
-    float: right;
-    margin: auto;
-    width: 65%;
-    height: 100%;
-}
-
-.valueContent{
-    color:white;
-    margin-top: 30px;
-    margin-right: 35px;
-    font-size: 20px;
-    letter-spacing: 2px;
-    line-height: 1.8;
+@keyframes scrooll-watcher{
+    to {scale: 1 1; }
 }
 
