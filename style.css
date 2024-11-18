@@ -8,13 +8,17 @@
 body {
     background: #02012b;
     font-family: "Montserrat", sans-serif;
-    height: 00%;
+    height: 500%;
     width: 100%;
     margin: 0;
   }
 
-.aboutPage{
-    height: 500%;
+.background-img{
+    background-image: url(image/DSC_6505.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 
@@ -60,7 +64,7 @@ li{
     text-decoration: none;
 }
 
-a:hover{
+.navItem:hover{
     animation: nav-hover-in ease-in 0.2s;
     font-weight: 600;
     font-size: 25px;
@@ -85,11 +89,14 @@ a:hover{
 }
 
 .fiTitle{
-    margin-top: 180px;
+    margin-top: 150px;
     color: #ffffff;
     text-align: center;
     font-size: 35px;
     font-weight: 700px;
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: exit-crossing;
 }
 
 
@@ -109,16 +116,28 @@ a:hover{
     text-align: center;
     font-size: 40px;
     font-style: italic;
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: exit-crossing;
 }
 
 .triTitle{
     animation-delay: 20s;
-    animation: appear 3s;
+    animation: appear 0.7s;
     margin-top: 10px;
     color: #ffffff;
     text-align: center;
     font-size: 30px;
     font-weight: 200;
+}
+
+.arrow{
+    animation-delay: 10s;
+    animation: appear ease-in 0.7s;
+    margin: auto;
+    width: 50px;
+    margin-top: 30px;
+    color: #ffffff;
 }
 
 .secTitle:hover{
@@ -137,7 +156,89 @@ a:hover{
     }
 }
 
-@keyframes scrooll-watcher{
-    to {scale: 1 1; }
+@keyframes fade-out{
+    to{
+        opacity:0;
+        scale: 0.5;
+    }
 }
 
+.introContainer{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry;
+    width: 80%;
+    height: 470px;
+    align-items: center;
+    margin: auto;
+    margin-top: 300px;
+    /* background-color:#13094f; */
+    /* box-shadow: 20px 20px 20px 5px #030016; */
+}
+.introLeft{
+    float: left;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.greetTitle{
+    text-align: center;
+    margin-top: 40px;
+    font-family: fvf;
+    letter-spacing: 2px;
+    font-size: 40px;
+    color:white;
+}
+
+
+.introContent{
+    color:white;
+    margin: 20px;
+    margin-top: 40px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.introContent-2{
+    width: 100%;
+    color:white;
+    margin: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 1.8;
+    text-align: left;
+}
+
+
+
+.buttonContainer{
+    overflow: hidden;
+    text-align: center;
+    background-color: white;
+    margin: auto;
+    margin-top: 50px;
+    width: 200px;
+    height: 60px;
+    border-radius: 5px;
+    color:black;
+    
+}
+
+.buttonContainer:hover{
+    background-color: rgba(0, 0, 0, 0.445);
+    color:white;
+}
+
+.buttonText{
+    margin: auto;
+    text-align: center;
+    padding-top:15px;
+    font-size: 25px;
+    margin: 0 auto;
+}
