@@ -6,13 +6,16 @@
     font-style: normal;
 }
 body {
-    background: #0a0133;
+    background: #02012b;
     font-family: "Montserrat", sans-serif;
-    height: 500%;
+    height: 00%;
     width: 100%;
     margin: 0;
   }
 
+.aboutPage{
+    height: 500%;
+}
 
 
 .navBar{
@@ -44,21 +47,8 @@ li{
     }
 }
 
-@keyframes nav-hover-out{
-    from {
-        margin: 14px 30px;
-        font-size: 25px;
-        font-weight: 600 ;
-    } 
-    to {
-        font-size: 20px;
-        font-weight: 300;
-        margin: 18px 30px;
-    }
-}
-
 .navItem{
-    animation: nav-hover-out ease-in 0.25s;
+    transition: 0.25s;
     float: right ;
     display: block;
     height: auto;
@@ -82,9 +72,11 @@ a:hover{
     height: auto;
     font-size: 25px;
     font-weight: 600;
-    padding: 14px 0px;
     color:aliceblue;
     margin-left: 30px;
+    margin-top: -5px;
+    font-family: fvf;
+    letter-spacing: 2px;
 }
 
 .clear
@@ -93,12 +85,13 @@ a:hover{
 }
 
 .fiTitle{
-    margin-top: 200px;
+    margin-top: 180px;
     color: #ffffff;
     text-align: center;
     font-size: 35px;
     font-weight: 700px;
 }
+
 
 @keyframes color-change-in {
     from {
@@ -109,22 +102,23 @@ a:hover{
     }
 }
 
-@keyframes color-change-out {
-    from {
-        color:#ffea98;
-    } 
-    to {
-        color:#ffffff;
-    }
-}
-
 .secTitle{
     margin-top: 10px;
-    animation: color-change-out ease-in 0.15s;
+    transition: 0.15s;
     color: #ffffff;
     text-align: center;
     font-size: 40px;
     font-style: italic;
+}
+
+.triTitle{
+    animation-delay: 20s;
+    animation: appear 3s;
+    margin-top: 10px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
 }
 
 .secTitle:hover{
@@ -132,60 +126,18 @@ a:hover{
     color: #ffea98;
 }
 
-.introContainer{
-    width: 90%;
-    height: 500px;
-    align-items: center;
-    margin: auto;
-    margin-top: 70px;
-    background-color:#0e0246;
-}
-.introLeft{
-    float: left;
-    margin: auto;
-    width: 70%;
-    height: auto;
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
 }
 
-.greetTitle{
-    text-align: center;
-    margin-top: 35px;
-    margin-right: 50px;
-    font-family: fvf;
-    letter-spacing: 2px;
-    font-size: 25px;
-    color:white;
+@keyframes scrooll-watcher{
+    to {scale: 1 1; }
 }
-
-.introContent{
-    color:white;
-    margin: 50px;
-    margin-top: 30px;
-    font-size: 20px;
-    letter-spacing: 2px;
-    line-height: 1.8;
-}
-
-.introRight{
-    float: right;
-    margin: auto;
-    width: 30%;
-    height: auto;
-}
-
-.introPicture{
-    
-    height: 400px;
-    width: 400px;
-    text-align: center;
-    background-color: #626ffb;
-}
-
-.introPicText{
-    margin-top: 20px;
-    text-align:center;
-    color: white;
-}
-
-
 
